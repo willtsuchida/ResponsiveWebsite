@@ -34,7 +34,6 @@ p {
 
 img {
   width: 100%;
-  /* of their container*/
 }
 
 /* NAVBAR */
@@ -50,6 +49,11 @@ img {
   position: fixed;
   top: 0px;
   padding: 0 5px;
+  transition: 0.5s;
+}
+
+.navbar .top {
+  background: transparent;
 }
 
 .navbar a {
@@ -85,7 +89,6 @@ img {
   justify-content: center;
   text-align: center;
   height: 100%;
-  /*do pai .hero*/
 }
 
 .hero .content h1 {
@@ -98,11 +101,10 @@ img {
   margin: 20px 0 30px;
 }
 
-/* Overlay, deixando foto escura*/
+/* Overlay, darkening photo*/
 .hero::before {
   content: "";
   position: absolute;
-  /*se açgp tem position absolute, o pai tem que ser relative */
   top: 0;
   left: 0;
   width: 100%;
@@ -115,12 +117,11 @@ img {
 }
 
 .hero.blog {
-  background: url('/images/home/blog.jpg') no-repeat center center/cover;
+  background: url("/images/home/blog.jpg") no-repeat center center/cover;
   height: 30vh;
 }
 
 /* ICONS */
-
 .icons {
   padding: 30px;
 }
@@ -189,7 +190,6 @@ img {
 }
 
 /* Footer */
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -203,7 +203,7 @@ img {
   color: #fff;
 }
 
-.footer .social>* {
+.footer .social > * {
   margin-right: 30px;
 }
 
@@ -241,7 +241,6 @@ img {
 }
 
 /* POST */
-
 .post {
   padding: 50 px 30x;
 }
